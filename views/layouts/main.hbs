@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="/newPost.css">
+<body>
+    <nav>
+        <a href="/">Main page</a>
+        <a href="/newPost">New post</a>
+     
+         {{#if username}}
+             {{> logoutBar this}}
+             {{else}}
+              {{> loginBar }}
+        {{/if}}
+
+    </nav>
+    {{{body}}}
+</body>
+</html>

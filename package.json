@@ -1,0 +1,36 @@
+{
+  "name": "lab-jaim1826",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ubb-webprog/labs2020/lab-jaim1826.git"
+  },
+  "author": "Joo Attila 522",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ubb-webprog/labs2020/lab-jaim1826/issues"
+  },
+  "homepage": "https://gitlab.com/ubb-webprog/labs2020/lab-jaim1826#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
+    "handlebars-helpers": "^0.10.0",
+    "hbs": "^4.1.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}

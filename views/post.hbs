@@ -1,0 +1,26 @@
+
+<p>User: {{post.username}}</p>
+<p>ID: {{post.postID}}</p>
+<p>Brand: {{post.brand}}</p>
+<p>City: {{post.city}}</p>
+<p>Price: {{post.price}}</p>
+<p>Date: {{post.uploadDate}}</p>
+
+{{#each images}}
+    <div class="image">
+        <img src="/image/{{imageName}}" alt="Kep" height="200"><br>
+      
+        {{#eq ../username ../post.username}}
+            <button class="torol" data-id="{{imageID}}" > Torles </button>
+        {{/eq}}
+    </div><br><br>
+{{/each}}
+
+
+<form action="/uploadPhoto" method="POST" enctype="multipart/form-data">
+    <input type="hidden" id="id" name="id" value="{{post.postID}}"> <br><br>
+    <input type="file" name="photo" accept="image/*"><br><br>
+    <input type="submit" id="submit">
+</form>
+
+<script src="../postInformation.js"> </script>

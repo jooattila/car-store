@@ -1,0 +1,14 @@
+<form action="/insertUser" method="POST">
+    <label for="username"> Username: </label><br>
+    <input type="text" id="username" name="username" pattern="^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$" title="Helytelen bemenet!"><br><br>
+    <label for="password"> Password: </label><br>
+    <input type="text" id="password" name="password" ><br><br>
+    <label for="passwordc"> Confirm password: </label><br>
+    <input type="text" id="passwordc" name="passwordc" ><br><br>
+    <label for="selectRole">Role:</label><br>
+        <select id= "selectRole" name = "selectRole"> 
+            <option value="admin"> Admin </option>
+            <option value="user"> User </option>
+        </select><br><br>
+    <input type="submit" id="register" value= "Register">
+</form>

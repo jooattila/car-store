@@ -1,0 +1,28 @@
+<h2>Keresesi form</h2>
+
+<form action="/" method="GET">
+    <label for="select">Search by:</label><br>
+        <select id= "select" name = "select"> 
+            <option value="all"> Show all </option>
+            <option value="brand">Brand</option>
+            <option value="city">City</option>
+            <option value="lowestprice">Lowest price</option>
+            <option value="highestprice">Highest price</option>
+        </select><br><br>
+    <input type="text" id="search" name="search" ><br><br>
+    <input type="submit" id="submit" value= "Search">
+</form>
+
+<h2>Posztok</h2>
+
+{{#each posts}}
+    <p>Brand: {{brand}}</p>
+    <p>City: {{city}}</p>
+    <p>Price: {{price}}</p>
+    <button id='result' onclick="teljesPoszt('{{postID}}')"> Show more </button><br><br>
+
+    <a href="/post?id={{postID}}">Link a posztra</a><br><br>
+
+{{/each}}
+
+<script src="../postInformation.js"> </script>

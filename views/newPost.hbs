@@ -1,0 +1,10 @@
+<form action="/insertData" method="POST">
+    <label for="brand">Car brand:</label><br>
+    <input type="text" id="brand" name="brand" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" title="Csak betuk elfogadottak!"><br><br>
+    <label for="city"> City: </label><br>
+    <input type="text" id="city" name="city" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" title="Csak betuk elfogadottak!"><br><br>
+    <label for="price"> Price: </label><br>
+    <input type="text" id="price" name="price" pattern="^[0-9]*$" title="Csak szamjegyek elfogadottak!"><br><br>
+    <input type="file" name="img" style="display:none"><br><br>
+    <input type="submit" id="submit">
+</form>
